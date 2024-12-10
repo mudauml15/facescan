@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Loader from "./UI/Loader/Loader";
+import FaceScanner from './UI/Face/FaceScanner';
 
 
 
@@ -69,8 +70,15 @@ export default App;
 function Register({ registerOnSuccess, registerOnFail }) {
   return (
     <>
-      <h1>Scan your face</h1>
 
+
+
+
+
+
+      <h2>Scan your face</h2>
+
+      <FaceScanner />
 
 
       <br />
