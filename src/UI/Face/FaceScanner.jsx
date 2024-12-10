@@ -19,18 +19,17 @@ export default function FaceScanner() {
 
         <>
 
-            <div className='mt-8 rounded-[10px] pl-[20px] pr-[20px] h-[500px]' >
-                <div className='relative flex' >
+            <div className="w-full max-w-md mx-auto p-4 mt-8 sm:mt-16 md:mt-32">
+                <div className="relative w-full h-[400px] max-w-[400px] mx-auto">
                     <Webcam
                         audio={false}
                         ref={webcamRef}
                         screenshotFormat="image/jpeg"
-
-
                         className="w-full h-full object-cover rounded-lg"
                         videoConstraints={{
-                            width: 300,
-                            height: 400,
+                            width: { min: 400, ideal: 1280, max: 1920 },
+                            height: { min: 400, ideal: 720, max: 1080 },
+                            facingMode: "user"
                         }}
 
                     />

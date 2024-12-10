@@ -110,7 +110,7 @@ function Landing() {
 
       <Loader />
 
-      <h1 class='logo'>Shaper</h1>
+      <h1 className='absolute top-[52%] left-2/4 -mt-[50px] -ml-[50px] font-extralight'>Shaper</h1>
 
 
 
