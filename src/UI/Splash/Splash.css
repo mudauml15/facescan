@@ -1,0 +1,93 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Ubuntu, 'Helvetica Neue', Helvetica, Arial, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft Yahei UI', 'Microsoft Yahei',
+        'Source Han Sans CN', sans-serif;
+    color: #000000;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 860px;
+    height: 429px;
+    margin: 0 auto;
+}
+.rectangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-radius: 15px;
+}
+.shaper-wordmark-black-navy {
+    position: absolute;
+    width: 42.99%;
+    height: 36.06%;
+    top: 32.08%;
+    left: 33.68%;
+    background: url(./assets/images/9186c390-fcc3-41c3-97ef-6e8e90257639.png)
+        no-repeat center;
+    background-size: 100% 100%;
+}
+
+.shaper-text {
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 10px;
+}
+.shaper-full-logo-vertical {
+    position: absolute;
+    width: 12.13%;
+    height: 32.49%;
+    top: 33.75%;
+    left: 19.87%;
+    z-index: 2;
+}
+.shaper-full-logo-vertical-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./assets/logo.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.powered-by-the-digital-academy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 265px;
+    height: 6.53%;
+    top: 64.34%;
+    left: 54.65%;
+    color: #000000;
+    font-family: Lexend Deca, var(--default-font-family);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.25px;
+    text-align: center;
+    z-index: 4;
+}
