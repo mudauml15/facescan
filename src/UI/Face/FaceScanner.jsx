@@ -16,29 +16,55 @@ export default function FaceScanner() {
     }, []);
 
     return (
-        <div className="w-full max-w-md mx-auto p-4 mt-36">
-            <div className="relative">
-                <Webcam
-                    audio={false}
-                    ref={webcamRef}
-                    screenshotFormat="image/jpeg"
-                    className="w-full rounded-lg"
-                />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border-4 border-white rounded-lg pointer-events-none"></div>
-            </div>
-            <div className="mt-4 flex flex-col items-center mb-4">
-                <button
-                    onClick={capture}
 
-                >
-                    Capture
-                </button>
+        <>
+
+            <div className='mt-8 rounded-[10px] pl-[20px] pr-[20px] h-[500px]' >
+                <div className='relative flex' >
+                    <Webcam
+                        audio={false}
+                        ref={webcamRef}
+                        screenshotFormat="image/jpeg"
+
+
+                        className="w-full h-full object-cover rounded-lg"
+                        videoConstraints={{
+                            width: 300,
+                            height: 400,
+                        }}
+
+                    />
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-96 border-4 border-white rounded-lg pointer-events-none"></div>
+                </div>
+
+            </div>
+
+
+
+
+            <button
+                onClick={capture}
+
+            >
+                Capture
+            </button>
+
+            <div className="mt-4 flex flex-col items-center mb-4">
+
                 {isCaptured && (
                     <div className="mt-4 text-center text-green-600 font-semibold">
                         Image captured successfully!
                     </div>
                 )}
             </div>
-        </div>
+
+
+        </>
+
+
+
     );
 }
+
+
+

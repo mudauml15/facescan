@@ -76,7 +76,7 @@ function Register({ registerOnSuccess, registerOnFail }) {
 
 
 
-      <h2>Scan your face</h2>
+      <h2 className='flex items-center justify-center mt-12 text-[24px]'>Face Recognition </h2>
 
       <FaceScanner />
 
