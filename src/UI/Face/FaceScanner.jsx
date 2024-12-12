@@ -84,13 +84,11 @@ export default function FaceScanner() {
               facingMode: "user",
             }}
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-96  border-2 border-white rounded-lg pointer-events-none"></div>
+
+          <div className=" h-[400px]  w-full max-w-[400px] mx-auto p-4 mt-8 sm:mt-16 md:mt-32 absolute top-1/2 left-1/2 transform -translate-x-1/2
+           -translate-y-1/2 border-2 border-white rounded-lg pointer-events-none"></div>
         </div>
       </div>
-
-     
-
-     
     </>
   );
 }
