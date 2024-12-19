@@ -49,25 +49,26 @@ export default function FaceScanner() {
           formData,
           { headers: { 'Content-Type': 'multipart/form-data' } }
         );
-        
+
 
         if (response.data.faces && response.data.faces[0] && response.data.faces[0].status && response.data.faces[0].status === "ok") {
           setImageSrc1(response.data.faces.image);
           setName(response.data.faces[0].name);
           setTime(response.data.faces[0].time);
-          setIsScanning(false); 
+          setIsScanning(false);
           console.log("okkkkkkk")
         }
 
         if (response.data.faces && response.data.faces[0] && response.data.faces[0].status && response.data.faces[0].status === "bad") {
           // navigate('/Page4', { replace: true, state: imageSrc1})
-          console.log("okkkkkkk")
+          console.log("noooooooo")
 
         }
       } catch (error) {
         console.error('Error recognizing face:', error);
       }
-    }}
+    }
+  }
 
   return (
     <>
@@ -85,8 +86,8 @@ export default function FaceScanner() {
             }}
           />
 
-          <div className=" h-[400px]  w-full max-w-[400px] mx-auto p-4 mt-8 sm:mt-16 md:mt-32 absolute top-1/2 left-1/2 transform -translate-x-1/2
-           -translate-y-1/2 border-2 border-white rounded-lg pointer-events-none"></div>
+          {/* <div className=" h-[400px]  w-full max-w-[400px] mx-auto p-4 mt-8 sm:mt-16 md:mt-32 absolute top-1/2 left-1/2 transform -translate-x-1/2
+           -translate-y-1/2 border-2 border-white rounded-lg pointer-events-none"></div> */}
         </div>
       </div>
     </>

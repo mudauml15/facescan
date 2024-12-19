@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from "react";
-import Home from './pages/home'
+import Home from "./pages/home";
 
-
-const MobileOnlyMessage = ({ mobileWidth = 768 }) => {
+const MobileOnlyMessage = ({ mobileWidth = 900 }) => {
   const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth <= mobileWidth);
     };
 
-
     checkScreenSize();
 
-
     window.addEventListener("resize", checkScreenSize);
-
 
     return () => {
       window.removeEventListener("resize", checkScreenSize);
@@ -48,18 +43,8 @@ const MobileOnlyMessage = ({ mobileWidth = 768 }) => {
 
   return (
     <>
-
-
-
       <Home />
-
-
     </>
-
-
-
-
-
   );
 };
 

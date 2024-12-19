@@ -56,7 +56,16 @@ function Register({ registerOnSuccess, registerOnFail }) {
                 {/* <button onClick={registerOnSuccess}>Success</button>
                 <button onClick={registerOnFail}>Fail </button> */}
 
-                <button class='scanBtn' onClick={registerOnSuccess} className="inline-flex h-12 min-w-96 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                <button
+                    class="scanBtn"
+                    onClick={registerOnSuccess}
+                    className="inline-flex h-12 min-w-52 sm:min-w-96 animate-shimmer
+         items-center justify-center rounded-md border border-slate-800
+         bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]
+         bg-[length:200%_100%] px-4 sm:px-6 font-medium text-slate-400
+         transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 
+         focus:ring-offset-2 focus:ring-offset-slate-50"
+                >
                     Scan
                 </button>
             </div>
@@ -96,13 +105,19 @@ function Register({ registerOnSuccess, registerOnFail }) {
 }
 
 function Failed() {
-    return <h1>Failed</h1>;
+    return
+
+
+    <h1>Failed</h1>;
 }
 
 function Success() {
     return (
         <>
-            <h1>Success</h1>
+            <h1 id="heading">Success</h1>
+            
+
+
         </>
     );
 }
