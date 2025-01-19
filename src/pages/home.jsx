@@ -105,19 +105,15 @@ function Register({ registerOnSuccess, registerOnFail }) {
 }
 
 function Failed() {
-    return
+    return;
 
-
-    <h1>Failed</h1>;
+    <h1>Failed page you need to retry </h1>;
 }
 
 function Success() {
     return (
         <>
-            <h1 id="heading">Success</h1>
-            
-
-
+            <h1 id="heading">Success page this should grant access</h1>
         </>
     );
 }

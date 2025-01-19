@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-custom-dark text-white; /* Sets default background and text color */
+  @apply bg-custom-dark text-gray-400; /* Sets default background and text color */
 }
 
 h1 {
